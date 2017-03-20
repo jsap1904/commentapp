@@ -1,4 +1,5 @@
 
+
 function todoList() {
 
 	var username = document.getElementById("username").value
@@ -17,16 +18,29 @@ function todoList() {
 	newListItem.appendChild(newUserName)
 	newListItem.appendChild(newComment)
 	document.getElementById("commentList").appendChild(newListItem)
-	return document.getElementById("commentList").style.visibility = "initial"
-
+	
 }
-  
 //function that erases the comments
 
 function removeLi() {
 
-var parent = document.getElementById("commentList")
-var child = document.getElementById("P")
-parent.appendChild(child)
+    var username = document.getElementById("username").value
+	var comment = document.getElementById("comment").value
 
+	var userNameText = document.createTextNode("Username: " + username)
+	var commentText = document.createTextNode("Comment: " + comment)
+
+	var newListItem = document.createElement("LI")
+	newListItem.className = "list-group-item"
+	var newUserName = document.createElement("H3")
+	newUserName.appendChild(userNameText)
+	var newComment = document.createElement("P")
+	newComment.appendChild(commentText)
+
+	newListItem.appendChild(newUserName)
+	newListItem.appendChild(newComment)
+	document.getElementById("commentList").appendChild(newListItem)
+
+	var item = document.getElementById("commentList")
+    item.parentNode.removeChild(item)
 }
