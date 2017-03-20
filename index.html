@@ -9,6 +9,17 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 		<title>Comment App</title>
+		<script
+  src="https://code.jquery.com/jquery-3.2.0.min.js"
+  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+  crossorigin="anonymous"></script>
+  <script>
+  $("button").click(function(){
+    $("P").toggle();
+    $("H3").toggle();
+})
+  </script>
+
 	</head>
 <!-- BODY  -->
 	<body>
@@ -28,6 +39,7 @@
 					<div class="form-group">
 						<button type="button" onclick="todoList()" class="btn btn-primary btn-lg">click me</button>
 						<button type="button" onclick="removeLi()" class="btn btn-primary btn-lg">erase!</button>
+						<button type="button" id="toggle" class="btn btn-primary btn-lg">toggle</button>
 					</div>
 				</form>
 					<ul id="commentList" class="list-group">
