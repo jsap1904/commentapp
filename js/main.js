@@ -17,3 +17,11 @@ function todoList() {
 	newListItem.appendChild(newComment)
 	document.getElementById("commentList").appendChild(newListItem)
 }
+
+//function that erases the comments
+
+var item = document.getElementById("commentList");
+
+function removeLi() {
+    item.parentNode.removeChild(item);
+}
