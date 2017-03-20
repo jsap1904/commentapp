@@ -5,12 +5,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- CSS LINK -->
 		<link rel="stylesheet" href="css/animate.css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/main.css">
-		
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+		<title>Comment App</title>
 	</head>
 <!-- BODY  -->
 	<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<span id="animationSandBox" style="display: block">
+				<h1 class="animated bounce">Comment App</h1></span>
 
+				<form id="todoForm">
+					<div class="form-group">
+						<input id="username" class="form-control" placeholder="username">
+					</div>
+					<div class="form-group">
+						<textarea id="comment" class="form-control" placeholder="comment"></textarea>
+					</div>
+					<div class="form-group">
+						<button type="button" onclick="todoList()" class="btn btn-primary btn-lg">click me</button>
+					</div>
+				</form>
+					<ul id="commentList" class="list-group">
+					</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+<script src="js/main.js"></script>
 	</body>
 <!-- 	BODY END -->
 </html>
