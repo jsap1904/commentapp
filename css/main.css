@@ -10,7 +10,7 @@ h1 {
 	font-family: 'Shadows Into Light', cursive;
 	color: white;
 	font-size: 70px;
-	
+
 
 }
 
@@ -26,4 +26,10 @@ p {
 
 .list-group-item {
 	opacity: .50;
+	z-index: -20;
+}
+
+img {
+	opacity: .990;
+	z-index: 100;
 }
