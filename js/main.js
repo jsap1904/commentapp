@@ -9,7 +9,7 @@ function todoList() {
 	var dateText = document.createTextNode("date: " + date)
 	var userNameText = document.createTextNode("Username: " + username)
 	var commentText = document.createTextNode("Comment: " + comment)
-	var getPic = document.createTextNode("img/add.png")
+	var getPic = document.createTextNode("")
 	var newListItem = document.createElement("LI")
 	newListItem.className = "list-group-item"
 
